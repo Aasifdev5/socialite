@@ -43,9 +43,25 @@
                     {{ __('Log in') }}
                 </x-button>
             </div>
-            <a href="{{ url('facebook') }}" style="margin-top: 0px !important;background: green;color: #ffffff;padding: 5px;border-radius:7px;" class="ml-2">
-                  <strong>Facebook Login</strong>
-                </a> 
+            <div class="flex items-center justify-end mt-5">
+                <a class="btn" href="{{ url('linkedin') }}"
+                    style="background: #0E62BC; color: #ffffff; padding: 10px; width: 100%; text-align: center; display: block; border-radius:3px;">
+                    Login with Linkedin
+                </a>
+            </div>
+            <div class="flex items-center justify-end mt-4">
+                <a class="btn" href="{{ url('twitter') }}"
+                    style="background: #1E9DEA; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
+                    Login with Twitter
+                </a>
+            </div>
+           
+                <div class="flex items-center justify-end mt-4">
+                <a class="btn" href="{{ url('facebook') }}"
+                    style="background: #3B5499; color: #ffffff; padding: 10px; width: 100%; text-align: center; display: block; border-radius:3px;">
+                    Login with Facebook
+                </a>
+            </div>
         </form>
     </x-authentication-card>
 </x-guest-layout>

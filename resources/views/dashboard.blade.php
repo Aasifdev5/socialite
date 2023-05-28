@@ -26,7 +26,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Facebook ID</th>
+                                                <th>{{ Auth::user()->social_type }}</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Password</th>
