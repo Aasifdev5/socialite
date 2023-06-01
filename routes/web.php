@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FacebookSocialiteController;
 use App\Http\Controllers\LinkedinController;
 use App\Http\Controllers\TwitterController;
+use App\Http\Controllers\InstagramController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +35,5 @@ Route::get('linkedin', [LinkedinController::class, 'linkedinRedirect']);
 Route::get('linkedin/callback', [LinkedinController::class, 'linkedinCallback']);
 Route::get('twitter', [TwitterController::class, 'loginwithTwitter']);
 Route::get('callback/twitter', [TwitterController::class, 'cbTwitter']);
+Route::get('instagram', [InstagramController::class, 'instagram']);
+Route::get('callback/instagram', [InstagramController::class, 'cbInstagram']);

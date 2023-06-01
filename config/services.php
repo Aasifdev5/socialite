@@ -34,17 +34,22 @@ return [
     'facebook' => [
         'client_id' => '272370311899921',
         'client_secret' => 'fa6065d2ff4b00adf289cdab27d449b8',
-        'redirect' => 'https://referalmarketing.natrajwebs.in/callback/facebook',
+        'redirect' => 'https://social.vraio.in/callback/facebook',
       ], 
 
     'linkedin' => [
         'client_id' => '86sy6t9nast5sk',
         'client_secret' => 'CDYYDmAxgjDxqevI',
-        'redirect' => 'https://referalmarketing.natrajwebs.in/linkedin/callback'
+        'redirect' => 'https://social.vraio.in/linkedin/callback'
     ],
     'twitter' => [
         'client_id' => 'AEku6TLcI25eopgmeVHZk42ga',
         'client_secret' => '5N9Qg7qLDPh4Qigrnu0GELG5YgiVdxQziRk57klbJaNQ9bGbTx',
-        'redirect' => 'https://referalmarketing.natrajwebs.in/callback/twitter',
+        'redirect' => 'https://social.vraio.in/callback/twitter',
+    ],
+    'instagram' => [
+        'client_id' => '896228321476003',
+        'client_secret' => '353af9b2d7f5dc4cab0e226aacab3125',
+        'redirect' => 'https://social.vraio.in/callback/instagram',
     ],
 ];

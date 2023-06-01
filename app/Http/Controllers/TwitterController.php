@@ -18,8 +18,12 @@ class TwitterController extends Controller
      
             $user = Socialite::driver('twitter')->user();
       
-            $userWhere = User::where('twitter_id', $user->id)->first();
-      
+            $userWhere = User::where('social_id', $user->id)->first();
+      // echo "<pre>";
+            // print_r( $user);
+            // echo "</pre>";
+           
+            // exit;
             if($userWhere){
       
                 Auth::login($userWhere);
@@ -30,8 +34,9 @@ class TwitterController extends Controller
                 $gitUser = User::create([
                     'name' => $user->name,
                     'email' => $user->email,
-                    'twitter_id'=> $user->id,
-                    'oauth_type'=> 'twitter',
+                    'profile_photo' => $user->avatar,
+                    'social_id'=> $user->id,
+                    'social_type'=> 'twitter',
                     'password' => encrypt('admin595959')
                 ]);
      
